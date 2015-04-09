@@ -1,0 +1,15 @@
+{
+  "name": "ng-drag",
+  "version": "0.0.0",
+  "authors": [
+    "Elmer Bulthuis <elmerbulthuis@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
