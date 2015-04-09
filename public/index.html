@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ng-drag</title>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="./ng-drag.js"></script>
+    <script src="./app.js"></script>
+</head>
+
+<body ng-app="app">
+    <div ng-repeat="position in positions" ng-style="{position: 'absolute', left: position.x + 'px', top: position.y + 'px'}" ng-dragstart="beginDragPosition(position)" ng-drag="doDragPosition(position, $event)" ng-dragcancel="doDragPosition(position, $event)">{{$index}}</div>
+
+    <div ng-dragstart="logit('dragstart')" ng-drag="logit('drag')" ng-dragend="logit('dragend')" ng-dragcancel="logit('dragcancel')">a</div>
+    <div ng-drag="logit($event)">b</div>
+
+</body>
+
+</html>
