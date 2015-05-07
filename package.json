@@ -2,6 +2,7 @@
   "name": "ng-drag",
   "version": "0.0.1",
   "description": "",
+  "main": "./src/ng-drag.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/LuvDaSun/ng-drag.git"
